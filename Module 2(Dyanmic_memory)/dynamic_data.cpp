@@ -15,9 +15,11 @@ int main()
     *b = 20.2432;
     printf("%f ", *b);
 
-    // int *axb;
-    // *axb = 10;
-    // cout << &axb << endl;
+    int *axb = new int;
+    *axb = 10;
+    cout << *axb << endl;
+
+    delete b;
 
     return 0;
 }

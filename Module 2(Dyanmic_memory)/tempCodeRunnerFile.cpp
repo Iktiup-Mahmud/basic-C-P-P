@@ -1,3 +1,3 @@
 
-    // *axb = 10;
-    // cout << &axb << endl;
+    *axb = 10;
+    cout << &axb << endl;
