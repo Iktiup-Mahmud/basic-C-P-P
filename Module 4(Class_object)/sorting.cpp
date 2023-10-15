@@ -10,7 +10,8 @@ int main()
         cin >> arr[i];
     }
 
-    // 
+    // sorting
+    sort(arr, arr+n, greater<int>{});
 
 
     for (int i = 0; i < n; i++)
