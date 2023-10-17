@@ -18,18 +18,25 @@ public:
     }
 };
 
-Student func()
+Student *func()
 {
-    Student rahim = Student(9, 16, 'A', "Rahim Ullah");
-    return rahim;
+    // Student rahim = Student(9, 16, 'A', "Rahim Ullah");
+    Student *a = new Student(9, 16, 'B', "Rahim Ullah");
+    return a;
 }
 
 int main()
 {
-    Student a = func();
+    Student *a = func();
 
-    cout << a.cls << endl;
-    cout << a.sec << endl;
+    cout << (*a).cls << endl;
+    cout << (*a).sec << endl;
+
+    // delete
+    delete a;
+
+    cout << (*a).cls << endl;
+    cout << (*a).sec << endl;
 
     return 0;
 }
