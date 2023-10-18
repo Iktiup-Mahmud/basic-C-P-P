@@ -20,9 +20,10 @@ Crickter* koholi()
 {
     Crickter *b = new Crickter;
     Crickter *a = dhoni();
-    // b->country = a->country;
-    // b->jersey_no = a->jersey_no;
-    b =a;
+    b->country = a->country;
+    b->jersey_no = a->jersey_no;
+    // b =a;
+    delete a;
     return b;
 };
 
