@@ -1,0 +1,2 @@
+
+            cout << age <<endl;
