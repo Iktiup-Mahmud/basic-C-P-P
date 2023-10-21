@@ -8,16 +8,32 @@ int main()
     // cout << s;
 
     int count = 0;
+    bool in_word = false;
 
-    stringstream ss(s);
-    string word;
+    // stringstream ss(s);
+    // string word;
 
-    while (ss >> word)
+    // while (ss >> word)
+    // {
+    //     // if ((*word.begin() >= 'A' && *word.begin() <= 'Z') || (*word.begin() >= 'a' && *word.begin() <= 'z')) count++;
+    //     if(isalpha(word[0]))count++;
+    //     // else if count++;
+    //     // cout << *word.begin()  << endl;
+    //     // cout << *word.end()  << endl;
+    // }
+
+    for (char c : s)
     {
-        if ((*word.begin() >= 'A' && *word.begin() <= 'Z') || (*word.begin() >= 'a' && *word.begin() <= 'z')) count++;
-        // else if count++;
-        // cout << *word.begin()  << endl;
-        // cout << *word.end()  << endl;
+        if (isalpha(c))
+        {
+            if (!in_word)
+            {
+                in_word = true;
+                count++;
+            }
+        }else{
+            in_word = false;
+        }
     }
 
     cout << count << endl;
