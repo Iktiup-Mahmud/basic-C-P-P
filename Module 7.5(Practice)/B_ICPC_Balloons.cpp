@@ -21,7 +21,7 @@ int main()
         // cout << t << " " << s<< endl;
 
         int arr[26] = {0};
-        bool is_first = true;
+        // bool is_first = true;
 
         for (int i = 0; i < s.length(); i++)
         {
@@ -31,7 +31,7 @@ int main()
                 if (arr[s[i] - 65] == 0)
                 {
                     arr[s[i] - 65] += 2;
-                    is_first = false;
+                    // is_first = false;
                     // cout << s[i] <<"if" << endl;
                 }
                 else
