@@ -12,6 +12,7 @@ int main()
         cin >> t;
 
         cin.ignore();
+        // cin.ignore();
 
         string s;
         cin >> s;
