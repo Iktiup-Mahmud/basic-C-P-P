@@ -37,44 +37,48 @@ int main()
                 }
             }
 
-            if (even - odd == 0)
+            if (even == odd)
             {
                 res = 0;
             }
-            else
+            else if (abs(even - odd) % 2 == 0)
             {
-                if (even > odd)
                 {
-                    int cnt = 0;
-                    while (even != odd)
-                    {
-                        cnt++;
-                        even--;
-                        odd++;
-                    }
-                    res = cnt;
+                    res = abs(even - odd) / 2;
+                    // cout << "2nd" << a << res;
+                }
 
-                    // cout << "1st";
-                }
-                else
-                {
-                    int cnt = 0;
-                    while (even != odd)
-                    {
-                        cnt++;
-                        even++;
-                        odd--;
-                    }
-                    res = cnt;
-                }
-                // cout << "2nd" << a << res;
+                // another way
+                // if (even > odd)
+                // {
+                //     int cnt = 0;
+                //     while (even != odd)
+                //     {
+                //         cnt++;
+                //         even--;
+                //         odd++;
+                //     }
+                //     res = cnt;
+
+                //     // cout << "1st";
+                // }
+                // else
+                // {
+                //     int cnt = 0;
+                //     while (even != odd)
+                //     {
+                //         cnt++;
+                //         even++;
+                //         odd--;
+                //     }
+                //     res = cnt;
+                // }
+
+                // cout << even << " "<< odd<< endl;
             }
-
-            // cout << even << " "<< odd<< endl;
-        }
             // cout << res << " " << a << endl;
             cout << res << endl;
-    }
+        }
 
-    return 0;
-}
+        return 0;
+    }
