@@ -18,7 +18,6 @@ int main()
             a = s.find(x);
         }
         cout << s << endl;
-        
     }
 
     return 0;
