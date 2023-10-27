@@ -1,1 +1,2 @@
-x
+
+    cout << word << endl;
