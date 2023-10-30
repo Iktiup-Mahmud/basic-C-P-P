@@ -1,0 +1,1 @@
+{"name":"Local: test","url":"e:\\z.phitron\\Milestone 2 (C++)\\Module 9(Final)\\test.c","tests":[{"id":1698694020209,"input":"5","output":"*\n**\n***\n****\n*****"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"e:\\z.phitron\\Milestone 2 (C++)\\Module 9(Final)\\test.c","group":"local","local":true}
