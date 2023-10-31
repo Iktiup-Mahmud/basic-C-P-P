@@ -1,1 +1,7 @@
-.
+Please enter 'aX': 
+Please enter 'aY': 
+Please enter 'bX': 
+Please enter 'bY': 
+Please enter 'cX': 
+Please enter 'cY': 
+The area is: 1.000000 square units
