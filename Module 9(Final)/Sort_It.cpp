@@ -34,6 +34,7 @@ bool cmp(Student a, Student b)
     }
 };
 
+
 int main()
 {
     int n;
