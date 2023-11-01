@@ -6,14 +6,8 @@ int main()
     int n, q;
     cin >> n >> q;
 
-    int arr[n][10000];
+    int arr[n][100000];
 
-    // for (int i = 0; i < n; i++)
-    // {
-    //     for (int j = 0; j < n; j++)
-    //     {
-    //     }
-    // }
     for (int i = 0; i < n; i++)
     {
         int a;
@@ -25,29 +19,13 @@ int main()
         }
     }
 
-    // int x, y;
-    // cin >> x>> y;
-
-    // for (int i = 0; i < count; i++)
-    // {
-    //     /* code */
-    // }
-    // cout << x << y << "Abcd" << endl;
-
-    // for (int j = 0; j < a; j++)
-    // {
-    //     cout << arr[j];
-    // }
-    // cout << n << q<< endl;
-
-    while (q--)
+    for (int i = 0; i < q; i++)
     {
+        /* code */
         int x, y;
         cin >> x >> y;
         cout << arr[x][y] << endl;
     }
-
-    // cout << n << q << k;
-
+    
     return 0;
 }
