@@ -12,6 +12,10 @@ int main()
     {
         for (int j = 0; j < i; j++)
         {
+            printf(" ");
+        }
+        for (int j = 0; j < i; j++)
+        {
             printf("%c", a);
         }
         printf("\n");
