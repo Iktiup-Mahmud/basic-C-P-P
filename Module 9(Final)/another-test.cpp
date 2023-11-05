@@ -3,6 +3,7 @@ using namespace std;
 
 int main()
 {
+    int count = 0;
     for (int i = 1; i <= 3; i++)
     {
         for (int j = 1; j <= 3; j++)
@@ -13,11 +14,14 @@ int main()
                     continue;
                 else
                 {
+                    count++;
                     cout << i << " " << j << " " << k << endl;
                 }
             }
         }
     }
 
+    cout << count;
+    
     return 0;
 }
