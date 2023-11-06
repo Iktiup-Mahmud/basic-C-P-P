@@ -57,12 +57,11 @@ using namespace std;
 
 class Box
 {
-private:
+public:
     int length;
     int breadth;
     int height;
 
-public:
     Box() : length(0), breadth(0), height(0) {}
 
     Box(int l, int b, int h) : length(l), breadth(b), height(h) {}
@@ -117,13 +116,13 @@ public:
 
 int main()
 {
-    Box b1;                                                       // Should set b1.l = b1.b = b1.h = 0;
-    Box b2(2, 3, 4);                                              // Should set b2.length = 2, b2.breadth = 3, b2.height = 4;
+    Box b1;                                             // Should set b1.l = b1.b = b1.h = 0;
+    Box b2(2, 3, 4);                                    // Should set b2.length = 2, b2.breadth = 3, b2.height = 4;
     cout << "Length: " << b2.getLength() << endl;       // Should return 2
     cout << "Breadth: " << b2.getBreadth() << endl;     // Should return 3
     cout << "Height: " << b2.getHeight() << endl;       // Should return 4
     cout << "Volume: " << b2.CalculateVolume() << endl; // Should return 24
-    bool x = (b1 < b2);                                           // Should return true based on the conditions given
+    bool x = (b1 < b2);                                 // Should return true based on the conditions given
     cout << b2 << endl;                                 // Should print "2 3 4" in order
     return 0;
 }
